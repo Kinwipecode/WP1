@@ -450,6 +450,25 @@ footer {
         flex-direction: column;
         gap: 16px;
         text-align: center;
+        padding: 20px 16px;
+    }
+
+    .actions {
+        flex-wrap: wrap;
+        gap: 8px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .btn {
+        flex: 1 1 calc(50% - 4px);
+        justify-content: center;
+        padding: 10px 12px;
+        font-size: 0.85rem;
+    }
+
+    #saveDiskBtn, #resetBtn {
+        flex: 1 1 100%;
     }
 
     .tabs {
