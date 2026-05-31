@@ -487,11 +487,28 @@ footer {
 
     .data-table {
         font-size: 0.85rem;
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .data-table th,
     .data-table td {
-        padding: 10px 12px;
+        padding: 10px 8px;
+    }
+
+    /* Subtle scrollbar for tables on mobile */
+    .data-table::-webkit-scrollbar {
+        height: 5px;
+    }
+    .data-table::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 4px;
+    }
+    .data-table::-webkit-scrollbar-thumb {
+        background: #667eea;
+        border-radius: 4px;
     }
 
     /* Temperaturfelder untereinander auf Smartphone */
